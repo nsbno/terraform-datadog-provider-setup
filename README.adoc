@@ -25,3 +25,12 @@ provider "datadog" {
   api_url = "https://api.datadoghq.eu/"
 }
 ----
+
+
+== Relevant Repositories
+
+You can use these repos together with this repo!
+
+link:https://github.com/nsbno/terraform-datadog-service[`nsbno/terraform-datadog-service`]::
+Connect a DataDog service to a team.
+
