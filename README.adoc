@@ -14,10 +14,14 @@ Remember to check out the link:variables.tf[*variables*] and link:outputs.tf[*ou
 
 [source, hcl]
 ----
-module "datadog-provider-setup" {
+module "datadog_provider_setup" {
   source = "github.com/nsbno/terraform-datadog-provider-setup?ref=x.y.z"
-  
-  
+}
+
+provider "datadog" {
+  api_key = module.datadog_provider_setup.datadog_api_key
+  app_key = module.datadog_provider_setup.datadog_app_key
+
+  api_url = "https://api.datadoghq.eu/"
 }
 ----
-
