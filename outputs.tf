@@ -1,7 +1,7 @@
-output "datadog_api_key" {
+output "api_key" {
   value = data.aws_secretsmanager_secret_version.datadog_api_key.secret_string
 }
 
-output "datadog_app_key" {
+output "app_key" {
   value = data.aws_secretsmanager_secret_version.datadog_app_key.secret_string
 }
